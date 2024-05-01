@@ -24,14 +24,14 @@ const index = () => {
 
       <section className=''>
           <div className="for-main-title">
-          <motion.h2 initial={{ y: 350, opacity: 0, }}
+          <motion.h2 initial={{ y: 150, opacity: 0, }}
     whileInView={{ y: 0, opacity: 1, scale: 1 }} viewport={{ once: true }}
     transition={{ duration: 0.5, type: 'easeInOut' }} className='main-title'>Populer Collections</motion.h2>
           <hr />
           </div>
           
           {/* ---- for popolur card  */}
-          <motion.div initial={{ y: 350, opacity: 0, }}
+          <motion.div initial={{ y: 150, opacity: 0, }}
     whileInView={{ y: 0, opacity: 1, scale: 1 }} viewport={{ once: true }}
     transition={{ duration: 0.5, type: 'easeInOut' }} className='flex flex-wrap justify-center gap-[30px] my-[50px]'>
             {
@@ -47,14 +47,14 @@ const index = () => {
 
       <section className=''>
           <div className="for-main-title">
-          <motion.h2 initial={{ y: 350, opacity: 0, }}
+          <motion.h2 initial={{ y: 150, opacity: 0, }}
     whileInView={{ y: 0, opacity: 1, scale: 1 }} viewport={{ once: true }}
     transition={{ duration: 0.5, type: 'easeInOut' }} className='main-title'>New Collections</motion.h2>
           <hr />
           </div>
           
           {/* ---- for popolur card  */}
-          <motion.div initial={{ y: 350, opacity: 0, }}
+          <motion.div initial={{ y: 150, opacity: 0, }}
     whileInView={{ y: 0, opacity: 1, scale: 1 }} viewport={{ once: true }}
     transition={{ duration: 0.5, type: 'easeInOut' }}  className='flex flex-wrap justify-center gap-[30px] my-[50px]'>
             {
@@ -67,7 +67,7 @@ const index = () => {
 
       {/* banner section  */}
       <section className='my-[1rem] h-[50vh] xsm:h-[70vh]'>
-           <motion.div initial={{ y: 350, opacity: 0, }}
+           <motion.div initial={{ y: 150, opacity: 0, }}
     whileInView={{ y: 0, opacity: 1, scale: 1 }} viewport={{ once: true }}
     transition={{ duration: 0.5, type: 'easeInOut' }}  className='w-full h-full relative flex items-center justify-start flex-col gap-3'>
            <img className=' w-[95%] xsm:w-[90%] md:w-[80%] h-full object-cover' src={bannerImg} alt="Banner" />
