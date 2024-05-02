@@ -2,8 +2,7 @@ import React, { useContext } from 'react'
 import { ProductContext } from '../../context/ProductsContext';
 import HomeBanner from '../../components/HomeBanner/HomeBanner';
 import './index.css'
-import bannerImg from '../../components/assets/Shopingbanner.jpg'
-
+import bannerImg from '../../assets/Shopingbanner.jpg'
 import Card from '../../components/Card/Card';
 import { Link } from 'react-router-dom';
 import { Navbar } from '../../components';
@@ -13,8 +12,6 @@ const index = () => {
   const { products , loading } = useContext(ProductContext);
   const [populerProducts,setPopulerProducts] = ([products.slice(0,4)]);
   const [newCollectionProducts,setNewCollectionProducts] = ([products.slice(4,8)]);
-  const [populerCollectionProducts,setPopulerCollectionProducts] = ([products.slice(2,6)]);
-  // console.log(populerCollectionProducts)
   return (
     
     <>

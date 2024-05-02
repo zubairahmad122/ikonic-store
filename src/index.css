@@ -63,9 +63,7 @@ li {
 
 
 
-.hnd-rotate{
-  /* transform: rotate(-70deg); */
-}
+
 
 .anim{
   animation: heroAnim 4s alternate-reverse infinite ease-in;

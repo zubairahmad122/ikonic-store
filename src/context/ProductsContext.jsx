@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 
-import { Allproducts } from '../../constants';
+import { Allproducts } from '../assets/constants';
 export const ProductContext = createContext();
 
 

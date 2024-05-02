@@ -1,13 +1,12 @@
-import hand1 from '../src/components/assets/hand1.jpg'
-import hand2 from '../src/components/assets/hand2.jpg'
-import hand3 from '../src/components/assets/hand3.jpg'
-import hand4 from '../src/components/assets/hand4.jpg'
-import hand5 from '../src/components/assets/hand5.jpg'
-import hand6 from '../src/components/assets/hand6.jpg'
-import phon1 from '../src/components/assets/phon1.jpg'
-import phon2 from '../src/components/assets/phon2.jpg'
-import phon3 from '../src/components/assets/phon3.jpg'
-import phon4 from '../src/components/assets/phon4.jpg'
+import hand1 from '../hand1.jpg'
+import hand2 from '../hand2.jpg'
+import hand3 from '../hand3.jpg'
+import hand4 from '../hand4.jpg'
+import hand5 from '../hand5.jpg'
+import hand6 from '../hand6.jpg'
+import phon1 from '../phon1.jpg'
+import phon2 from '../phon2.jpg'
+import phon3 from '../phon3.jpg'
 export const Allproducts = [
     {
         id: 1,
@@ -84,7 +83,7 @@ export const Allproducts = [
     {
         id: 10,
         title: ' Samsung s22 ultra',
-        images:phon2,
+        images:phon3,
         price:700,
         description:"   Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio assumenda consequatur sit a odio. Recusandae molestias vero ducimus explicabo eveniet.",
         category:"smartphones"
