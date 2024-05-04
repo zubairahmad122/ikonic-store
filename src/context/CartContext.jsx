@@ -50,16 +50,7 @@ const addToCart = (product,id) =>{
         setCart(newcart);
     }else{
         setCart([...cart,newItem]);
-    }
-}
-
-
-// ---------- increase ==========
-const increase = (product,id) =>{
-   
-
-        const cartItem = cart.find((item) => item.id === id);
-        toast.success('Product Quantity Successfuly Increase', {
+        toast.success('Product Successfuly Added to Cart ', {
             position: "top-right",
             autoClose: 1500,
             hideProgressBar: false,
@@ -69,6 +60,16 @@ const increase = (product,id) =>{
             progress: undefined,
             theme: "light",
             });
+    }
+}
+
+
+// ---------- increase ==========
+const increase = (product,id) =>{
+   
+
+        const cartItem = cart.find((item) => item.id === id);
+       
         if(cartItem){
            const newCart = cart.map((i) =>{
                return i.id === i;
@@ -88,22 +89,26 @@ const descrease = (id) =>{
     if(cartFind){
         const newCart = cart.map((i) =>{
             if(i.id === id){
-                return {...i,quantity:cartFind.quantity < 2 ? 1 : cartFind.quantity - 1}
+                return {...i,quantity:cartFind.quantity < 2 ? 1 : cartFind.quantity - 1 }
+
             }else{
                 return i;
             }
         })
         setCart(newCart)
-        toast.success('Product Quantity Successfuly Descrease', {
-            position: "top-right",
-            autoClose: 1500,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            });
+        if(cartFind.quantity > 1){
+            toast.success('Product Quantity Successfuly Descrease', {
+                position: "top-right",
+                autoClose: 1500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+        }
+ 
     }
 }
 
