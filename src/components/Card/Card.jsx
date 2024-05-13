@@ -10,7 +10,7 @@ const Card = ({image,price,title,id,product,des}) => {
     <Link className='cursor-pointer' to={`/productDetail/${id}`} >
 
       <div className='relative'>
-        <img className='w-full h-[200px] sm:h-[180px] mdd:h-[280px] object-cover' src={image} alt="Product Image" />
+        <img className='w-full h-[200px] sm:h-[180px] mdd:h-[280px] object-cover' loading="lazy" src={image} alt="Product Image" />
         <div
         className='card-btn'>
 
