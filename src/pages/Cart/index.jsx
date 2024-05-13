@@ -25,7 +25,7 @@ const index = () => {
     <>
       <div className=' no-scrollbar overflow-x-scroll'>
          <div className='w-[411px] xsm:w-full no-scrollbar  overflow-x-scroll '>
-        <div className='main-grid border-b-[1px] pb-[20px] mb-[20px]'>
+        <div className='main-grid place-content-start place-items-start px-5 sm:px-20 border-b-[1px] pb-[20px] mb-[20px]'>
        <p className='font-semibold text-[13px] xsm:text-[16px]'>Name</p>
        <p className='font-semibold text-[13px] xsm:text-[16px]'>Price</p>
        <p className='font-semibold text-[13px] xsm:text-[16px]'>Quantity</p>
@@ -36,18 +36,29 @@ const index = () => {
       return (
        <div key={i.id} className='w-[100%] relative mb-[40px]'>
          <RxCross2 onClick={() => removeFromCart(i.id)} className='cursor-pointer absolute right-1 lg:right-6  top-[-15px] lg:top-2 text-[22px] lg:text-[25px]' />
-       <div className=' main-grid mt-[20px]'>
-          <div className='flex max-sm:flex-col items-center justify-center gap-4'>
-            <img className=' w-[80px] sm:w-[98px]' src={i.images} alt={i.image} />
+       <div className=' main-grid place-content-start place-items-start px-5 sm:px-20 mt-[20px]'>
+          <div className='flex max-md:flex-col md:items-center justify-center  gap-4'>
+            <img className=' w-[80px] h-[60px] sm:h-[65px] md:w-[95px]' src={i.images} alt={i.image} />
+            <div className='h-full flex items-center justify-center'>
+
             <p className='  text-[12px] xsm:text-[14px] font-semibold'>{i.title}</p>
+            </div>
           </div>
-          <p className='font-semibold text-[14px] xsm:text-[16px]'>$ {i.price}</p>
-          <div className='flex items-center border gap-2'>
+          <div className='h-full flex items-center justify-center'>
+
+          <p className='font-semibold  text-[14px] xsm:text-[16px]'>$ {i.price}</p>
+          </div>
+        <div className='h-full flex items-center justify-center'>
+        <div className='flex justify-center items-center border gap-2'>
                     <button onClick={() => increase(i,i.id)} className='border px-1 xsm:px-2 py-1'><FaPlus/></button>
                     <p className=' text-[12px] xsm:text-[16px]'>{i.quantity}</p>
                     <button onClick={() => descrease(i.id)} className='border px-1 xsm:px-2 py-1'><FaMinus/></button>
                   </div>
+        </div>
+        <div className='h-full flex items-center justify-center'>
+
            <p className=' text-[14px] font-semibold xsm:text-[16px]'>$ {i.price * i.quantity}</p>
+        </div>
         
         </div>
         <hr className='w-[90%] text-center mx-auto mt-[20px]' />
