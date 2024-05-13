@@ -32,7 +32,7 @@ const App = () => {
       ariaLabel="rotating-square-loading"
     />
   </div>
-  <div className={`max-w-[1600px] mx-auto ${loading || !homeLoader ? 'hidden' : ''}`}>
+  <div className={` ${loading || !homeLoader ? 'hidden' : ''}`}>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />

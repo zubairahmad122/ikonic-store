@@ -17,7 +17,7 @@ const index = () => {
 <>
     <BgNavbar />
 
-    <section className='my-[100px]  px-[0.2rem] ssm:px-[0.5rem] sm:px-[2rem] py-[1rem]'>
+    <section className='my-[100px] max-w-screen-2xl mx-auto   px-[0.2rem] ssm:px-[0.5rem] sm:px-[2rem] py-[1rem]'>
     <h2 className='text-[22px] font-bold my-[20px]'>Shopping Cart {totalQuantity}</h2>
     {cart.length < 1 ? <div>
       <h1 className='text-center text-[40px]'>Cart In Empty </h1>          <p className='text-center mt-[20px]'><Link to={'/products'} className='text-blue-600 font-semibold '>Continue Shopping →</Link></p>

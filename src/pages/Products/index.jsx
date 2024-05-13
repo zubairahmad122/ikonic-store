@@ -68,10 +68,10 @@ const index = () => {
       <motion.section initial={{ y: 0, opacity: 0, scale:0.5 }}
     whileInView={{ y: 0, opacity: 1, scale: 1 }} viewport={{ once: true }}
     transition={{ duration: 0.5, type: 'easeInOut' }}  id='main-shop' className='flex items-center justify-center w-full h-[50vh] mt-[60px] sm:mt-[85px]  xsm:h-[70vh] mb-0  object-cover bg-center bg-cover'>
-      <h1 className='text-[28px] font-medium tracking-wide text-blue-700 uppercase text-center xsm:text-[40px] mdd:text-[60px] xl:text-[85px]'>Our Shop</h1>
+      <h1 className='text-[28px] font-medium tracking-wide text-blue-700  uppercase text-center xsm:text-[40px] mdd:text-[60px] xl:text-[85px]'>Our Shop</h1>
       </motion.section>
 
-      <motion.section className='w-full my-0 sm:my-[60px]'>
+      <motion.section className='w-full max-w-screen-2xl mx-auto  my-0 sm:my-[60px]'>
         {/* ----- for filter  */}
         <div className=' px-[20px] mdd:px-[40px] mdd:items-start flex-wrap flex items-center justify-center w-full flex-col mdd:flex-row  '>
           <div className=' w-full mdd:w-[20%] items-center justify-center mt-[60px]'>

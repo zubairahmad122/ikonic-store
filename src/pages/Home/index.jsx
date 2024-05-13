@@ -19,7 +19,7 @@ const index = () => {
       <HomeBanner />
       {/* -------- Popyler connection   */}
 
-      <section className=''>
+      <section className='max-w-screen-2xl mx-auto '>
           <div className="for-main-title">
           <motion.h2  className='main-title'>Populer Collections</motion.h2>
           <hr />
@@ -38,7 +38,7 @@ const index = () => {
 
       {/* -------- New connection   */}
 
-      <section className=''>
+      <section className='max-w-screen-2xl mx-auto '>
           <div className="for-main-title">
           <motion.h2  className='main-title'>New Collections</motion.h2>
           <hr />
@@ -55,7 +55,7 @@ const index = () => {
       </section>
 
       {/* banner section  */}
-      <section className='my-[1rem] h-[50vh] xsm:h-[70vh]'>
+      <section className='my-[1rem] h-[50vh] max-w-screen-2xl mx-auto  xsm:h-[70vh]'>
            <motion.div   className='w-full h-full relative flex items-center justify-start flex-col gap-3'>
            <img className=' w-[95%] xsm:w-[90%] md:w-[80%] h-full object-cover' src={bannerImg} alt="Banner" />
            <div className='absolute mx-[10%] w-[85%] xsm:w-[80%] flex items-center text-center xsm:text-start xsm:items-start px-[2rem] justify-center top-0 left-0 flex-col h-full'>
